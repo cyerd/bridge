@@ -1,0 +1,10 @@
+services:
+  db:
+    image: postgres:15-alpine
+    restart: always
+    environment:
+      POSTGRES_USER: payload
+      POSTGRES_PASSWORD: payloadpassword
+      POSTGRES_DB: eastafricabridge
+    ports:
+      - "5432:5432"
